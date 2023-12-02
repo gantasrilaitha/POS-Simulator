@@ -1,0 +1,161 @@
+/*.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .image-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .image-card h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .image-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  */
+
+  /*body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+}*/
+
+/*.product-grid {
+    display: flex;
+    max-width: 600px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
+
+.product {
+    flex: 1;
+}
+.product-grid {
+  white-space: nowrap; /* Prevent products from wrapping to the next line */
+  font-size: 0; /* Remove whitespace between inline-block elements */
+  overflow-x: auto; /* Adjust the gap between products as needed */
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-details {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*.mname {
+    font-size: 24px;
+    margin: 0;
+}
+
+.qty, .price {
+    margin-top: 8px;
+    font-size: 18px;
+}*/
+.product-container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start (left) of the container */
+  align-items: flex-start; /* Align items to the start (top) of the container */
+  flex-wrap: wrap; /* Wrap products to the next row when there's not enough space */
+  max-width: 100%; /* To ensure it doesn't exceed the left half */
+  height: 100vh; /* Full viewport height */
+  padding: 20px; /* Adjust padding as needed */
+  overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+
+.product-card {
+  display: inline-block;
+  width: calc(33.33% - 20px); /* Adjust the width as needed; 33.33% for 3 columns */
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin-right: 20px; /* Add spacing between product cards */
+  vertical-align: top; /* Align product cards to the top */
+  white-space: normal; 
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Spacing below the image */
+}
+.mname,
+.price,
+.qty {
+  font-size: 16px;
+  margin: 0;
+  padding: 5px 0;
+}
+.new-row {
+  clear: left;
+  margin-right: 0;
+}
+/* styles.css */
+
+/*body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}*/
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"],
+select {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.total-cost {
+  margin-top: 20px; /* Adjust the top margin as needed */
+  text-align: right; /* Align the text to the right */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Set the text color to dark gray or your desired color */
+}

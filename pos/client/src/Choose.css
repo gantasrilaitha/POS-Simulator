@@ -1,0 +1,17 @@
+/* src/Login.css */
+
+div {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
