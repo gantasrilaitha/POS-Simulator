@@ -20,7 +20,9 @@ POS Simulator is a comprehensive software solution designed to implement a point
 
 ## **How to use**
 - **Clone the repo:** ```git clone https://github.com/gantasrilaitha/POS-Simulator-SE-Project```
-  
+
+- **Database creation:** Create a database named "pos" in mongodb compass and insert some items into the collections whose schema is defined in ```cd server/models/```
+
 - **Frontend (Client):**
     ```bash
     cd client
@@ -39,4 +41,6 @@ POS Simulator is a comprehensive software solution designed to implement a point
 
 ## **Note**
 All documentations wrt to project are available in the repo. Have a look!
-    
+
+## **Review Feedback**
+Let me know your feedback on srilaitha2003@gmail.com
