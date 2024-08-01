@@ -34,6 +34,9 @@ POS Simulator is a comprehensive software solution designed to implement a point
     ```
 - **Open:** ```http://localhost:5173/```
 
+## **Have a look**
+[New Tab.webm](https://github.com/user-attachments/assets/ddac290e-774f-4646-8ec8-10ab59076a8e)
+
 ## **Note**
 All documentations wrt to project are available in the repo. Have a look!
     
