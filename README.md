@@ -32,6 +32,7 @@ POS Simulator is a comprehensive software solution designed to implement a point
     cd server
     npm start
     ```
+- **Open:** ```http://localhost:5173/```
 
 ## **Note**
 All documentations wrt to project are available in the repo. Have a look!
