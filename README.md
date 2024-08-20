@@ -41,6 +41,7 @@ POS Simulator is a comprehensive software solution designed to implement a point
 
 ## **Note**
 All documentations wrt to project are available in the repo. Have a look!
+Will soon deply it on Vercel.
 
 ## **Review Feedback**
 Let me know your feedback on srilaitha2003@gmail.com
