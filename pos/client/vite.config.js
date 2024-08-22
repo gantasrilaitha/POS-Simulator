@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       // Ensure this external option is correctly defined or remove it if not needed
-      external: [['react', 'react-dom']], // Specify external dependencies here or remove this line if you want everything bundled
+      external: [['react', 'react-dom','chart','react-chartjs-2']], // Specify external dependencies here or remove this line if you want everything bundled
     },
   },
 });
