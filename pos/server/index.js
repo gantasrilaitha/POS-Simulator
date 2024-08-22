@@ -13,6 +13,7 @@ app.use(cors(
   
 ))
 
+//MONGO_CONNECTION: <mongo_connection_string>/<database_name> (format,if mongo atlas is used)
 mongoose.connect("mongodb://127.0.0.1:27017/pos",{
     useNewUrlParser: true,
     useUnifiedTopology: true,
