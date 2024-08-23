@@ -6,7 +6,7 @@ const billingSchema = new mongoose.Schema({
   paymentMethod: String,
   totalCost: Number,
   timestamp: Date,
-},{collection: 'Billing' });
+},{collection: 'billings' });
 
 // Create a Mongoose model based on the schema
 const BillingModel = mongoose.model('Billings', billingSchema);

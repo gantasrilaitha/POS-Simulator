@@ -4,16 +4,18 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const StaffModel=require('./models/Staff');
 const ItemModel = require('./models/Img');
-const BillingModel = require('./models/Billings');
+const BillingModel = require('./models/Billing');
 const AdminModel=require('./models/Admin');
 const cors = require('cors');
 
 require('dotenv').config({ path: "./config/.env" });
 const app=express()
 app.use(express.json())
-app.use(cors(
-  
-))
+app.use(cors({
+  origin:['https://pos-simulator-se-project-frontend.vercel.app/'],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}))
 
 //MONGO_CONNECTION: <mongo_connection_string>/<database_name> (format,if mongo compass is used)
 const mongoConnectionString = process.env.URI;
