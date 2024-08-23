@@ -1,20 +1,25 @@
+
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const StaffModel=require('./models/Staff');
 const ItemModel = require('./models/Img');
-const BillingModel = require('./models/Billing');
+const BillingModel = require('./models/Billings');
 const AdminModel=require('./models/Admin');
 const cors = require('cors');
-const app=express()
 
+require('dotenv').config({ path: "./config/.env" });
+const app=express()
 app.use(express.json())
 app.use(cors(
   
 ))
 
-//MONGO_CONNECTION: <mongo_connection_string>/<database_name> (format,if mongo atlas is used)
-mongoose.connect("mongodb://127.0.0.1:27017/pos",{
+//MONGO_CONNECTION: <mongo_connection_string>/<database_name> (format,if mongo compass is used)
+const mongoConnectionString = process.env.URI;
+const port=process.env.PORT;
+console.log(mongoConnectionString,port);
+mongoose.connect(mongoConnectionString,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
@@ -90,11 +95,11 @@ app.post('/updateQuantity/:productId', async (req, res) => {
     }
   });
 
-app.get('/images', async (req, res) => {console.log(req.body)
+app.get('/images', async (req, res) => {//console.log(req.body)
     try {
       // Retrieve all image records from the MongoDB collection
       const images = await ItemModel.find();
-      console.log(images)
+      //console.log(images)
       res.json(images);
     } catch (error) {
       console.error('Error fetching images:', error);
@@ -201,6 +206,6 @@ app.get('/low-quantity-items', async (req, res) => {
   }
 });
 
-app.listen(3001,()=>{
+app.listen(port,()=>{
     console.log('server is running')
 })
