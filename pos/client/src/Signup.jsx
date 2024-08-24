@@ -12,7 +12,7 @@ const Signup = () => {
 
     const handleSubmit=(e)=>{
       e.preventDefault()
-      axios.post('https://pos-simulator-se-project-frontend.vercel.app/detail',{username,password})
+      axios.post('https://pos-simulator-se-project-backend.vercel.app/detail',{username,password})
       .then(result=>{console.log(result)
         if(result.data==="Success"){
         navigate('/Success')

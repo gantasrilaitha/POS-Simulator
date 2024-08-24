@@ -20,7 +20,7 @@ const Success = () => {
 
   useEffect(() => {
     // Fetch images from the backend when the component mounts
-    axios.get('https://pos-simulator-se-project-frontend.vercel.app/images')
+    axios.get('https://pos-simulator-se-project-backend.vercel.app/images')
     .then((response) => setImages(response.data))
     .catch((error) => console.error('Error fetching images:', error));
     }, []);
@@ -61,11 +61,11 @@ const Success = () => {
     // Update quantity in MongoDB (you'll need to implement this)
     // Example API call to update quantity:
     axios
-    .post(`https://pos-simulator-se-project-frontend.vercel.app/updateQuantity/${productId}`, { quantity })
+    .post(`https://pos-simulator-se-project-backend.vercel.app/updateQuantity/${productId}`, { quantity })
     .then((response) => {
       // After successfully updating the quantity, fetch the updated product data
       axios
-        .get(`https://pos-simulator-se-project-frontend.vercel.app/images/${productId}`)
+        .get(`https://pos-simulator-se-project-backend.vercel.app/images/${productId}`)
         .then((response) => {
           // Update the product data in the state with the updated quantity
           const updatedProduct = response.data;
@@ -183,7 +183,7 @@ const Success = () => {
       totalCost,
     };
     axios
-      .post('https://pos-simulator-se-project-frontend.vercel.app/saveBillingData', billingData)
+      .post('https://pos-simulator-se-project-backend.vercel.app/saveBillingData', billingData)
       .then((response) => {
         console.log('Billing data saved successfully:', response.data);
         // Clear the selected terminal number and payment method
