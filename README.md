@@ -22,7 +22,9 @@ POS Simulator is a comprehensive software solution designed to implement a point
 - **Clone the repo:** ```git clone https://github.com/gantasrilaitha/POS-Simulator-SE-Project```
 
 - **Database creation:** Create a database named "pos" in mongodb compass and insert some items into the collections whose schema is defined in ```cd server/models/```
-
+  
+- **Configurations:** Create a ```.env``` file in ```/pos/server/config``` directory and store the URI(mongo atlas connection url format)="mongodb+srv://<username>:<user_password>@<XXX.XXXXX.mongodb.net>/<db_name>?retryWrites=true&w=majority&appName=<cluster_name>"  and PORT(you can use any port number as per your convenience).
+  
 - **Frontend (Client):**
     ```bash
     cd client
@@ -34,14 +36,15 @@ POS Simulator is a comprehensive software solution designed to implement a point
     cd server
     npm start
     ```
-- **Open:** ```http://localhost:5173/```
-
+- **Open, to see the application running locally:** ```http://localhost:5173/```
+  
+- **Open, to see the application running on Vercel, after deployment:** [POS](https://pos-simulator-se-project-frontend.vercel.app/)
+  
 ## **Have a look**
 [New Tab.webm](https://github.com/user-attachments/assets/ddac290e-774f-4646-8ec8-10ab59076a8e)
 
 ## **Note**
 All documentations wrt to project are available in the repo. Have a look!
-Will soon deply it on Vercel.
 
 ## **Review Feedback**
 Let me know your feedback on srilaitha2003@gmail.com
