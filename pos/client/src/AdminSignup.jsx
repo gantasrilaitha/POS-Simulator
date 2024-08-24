@@ -12,7 +12,7 @@ const AdminSignup = () => {
 
     const handleSubmit=(e)=>{
       e.preventDefault()
-      axios.post('http://localhost:3001/admindetail',{username,password})
+      axios.post('https://pos-simulator-se-project-frontend.vercel.app/admindetail',{username,password})
       .then(result=>{console.log(result)
         if(result.data==="Success"){
         navigate('/AdminSuccess')

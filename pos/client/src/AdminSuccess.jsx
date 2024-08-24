@@ -39,9 +39,9 @@ const AdminApp = () => {
   useEffect(() => {   
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/billing');
+        const response = await axios.get('https://pos-simulator-se-project-frontend.vercel.app/billing');
         setBillingData(response.data);
-        const productsResponse = await axios.get('http://localhost:3001/products');
+        const productsResponse = await axios.get('https://pos-simulator-se-project-frontend.vercel.app/products');
         setProductSales(productsResponse.data);
       } catch (error) {
         console.error(error);
@@ -54,7 +54,7 @@ const AdminApp = () => {
   
   const fetchLowQuantityItems = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/low-quantity-items');
+      const response = await axios.get('https://pos-simulator-se-project-frontend.vercel.app/low-quantity-items');
       setLowQuantityItems(response.data);
     } catch (error) {
       console.error(error);
