@@ -16,14 +16,23 @@ POS Simulator is a comprehensive software solution designed to implement a point
   <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" width="40" height="40"/>
   <img src="https://img.icons8.com/color/48/000000/vite.png" alt="Vite" width="40" height="40"/>
   <img src="https://img.icons8.com/color/48/000000/jira.png" alt="Jira" width="40" height="40"/>
+  <img src="https://img.icons8.com/color/48/000000/vercel.png" alt="Vercel" width="40" height="40"/>
+  <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="MongoDB Atlas" width="40" height="40"/>
 </p>
 
 ## **How to use**
 - **Clone the repo:** ```git clone https://github.com/gantasrilaitha/POS-Simulator-SE-Project```
 
-- **Database creation:** Create a database named "pos" in mongodb compass and insert some items into the collections whose schema is defined in ```cd server/models/```
+- **Database creation:**
+    - For mongodb compass (local db): Create a database named "pos" in mongodb compass and insert some items into the collections whose schema is defined in ```cd server/models/```
+    - For mongodb atlas (cloud db): <br>
+        *Step 1:* Create a project in mongodb atlas. ex: point_of_sale_simulator-seproj<br>
+        *Step 2:* Navigate to the project created and create a database under Deployment in left pannel. Create a shared cluster(free sandbox)<br>
+        *Step 3:* Navigate to Network access under Security in left pannel and add the i.p address ``` 0.0.0.0/0 ``` so that it can be accessed by anyone & anywhere<br>
+        *Step 4:* Goto Collections tab in your database & insert the required documents and collections whose schema is defined in ``` cd server/models/``` <br>
+        
   
-- **Configurations:** Create a ```.env``` file in ```/pos/server/config``` directory and store the URI(mongo atlas connection url format)="mongodb+srv://<username>:<user_password>@<XXX.XXXXX.mongodb.net>/<db_name>?retryWrites=true&w=majority&appName=<cluster_name>"  and PORT(you can use any port number as per your convenience).
+- **Configurations for deployment:** Create a ```.env``` file in ```/pos/server/config``` directory and store the URI(mongo atlas connection url format)="mongodb+srv://<username>:<user_password>@<XXX.XXXXX.mongodb.net>/<db_name>?retryWrites=true&w=majority&appName=<cluster_name>"  and PORT(you can use any port number as per your convenience).
   
 - **Frontend (Client):**
     ```bash
