@@ -1,7 +1,7 @@
 # POS-Simulator for Retail Stores-SE Project🛒
 
 ## **Overview**
-POS Simulator is a comprehensive software solution designed to implement a point-of-sale (POS) system for physical retail stores. Offers a range of features to streamline and secure retail operations, including:
+POS Simulator is a web application designed to implement a point-of-sale (POS) system for physical retail stores. Offers a range of features to streamline and secure retail operations, including:
 
 - **➡️Secure Authentication**: Staff and admin can securely log into the system.
 - **➡️Product Management**: Search products by barcode, calculate quantities and total prices, and update stock in the backend database.
